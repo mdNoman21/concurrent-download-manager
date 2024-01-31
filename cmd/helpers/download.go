@@ -1,7 +1,6 @@
 package helpers
 
 import (
-	"fmt"
 	"log"
 
 	"github.com/go-playground/validator/v10"
@@ -21,7 +20,6 @@ func DownloadFromURL(url string) error {
 	// Validate the Download struct
 	if err := validate.Struct(d); err != nil {
 		// Handle validation errors
-		fmt.Println("Validation error:", err)
 		return err
 	}
 
