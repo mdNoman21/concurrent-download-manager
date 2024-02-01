@@ -13,7 +13,7 @@ func DownloadFromURL(url string) error {
 	// Create a Download instance with the provided URL and other settings
 	d := models.Download{
 		Url:           url, // Assuming you have a URL field in your Download struct
-		TargetPath:    "final.mp4",
+		TargetPath:    "/app/downloads/final.mp4",
 		TotalSections: 10,
 	}
 

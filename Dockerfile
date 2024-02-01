@@ -1,5 +1,8 @@
 FROM golang:1.21.4
 
+# Create the /app/downloads directory
+RUN mkdir -p /app/downloads
+
 WORKDIR /app
 
 # Copy the Go module files
