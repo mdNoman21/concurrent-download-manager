@@ -18,7 +18,7 @@ func main() {
 	fmt.Println("Enter URL:")
 	if scanner.Scan() {
 		url := scanner.Text()
-		fmt.Println("URL entered:", url)
+		fmt.Println("URL :", url)
 
 		err := helpers.DownloadFromURL(url)
 		if err != nil {

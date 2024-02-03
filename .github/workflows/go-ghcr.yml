@@ -34,7 +34,7 @@ jobs:
       uses: docker/login-action@v3
       with:
         registry: ghcr.io
-        username: mdNoman21
+        username: mdnoman21
         password: ${{ secrets.GH_PAT }}
 
     - name: Build Docker image
