@@ -30,12 +30,12 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Log in to GitHub Container Registry
-      uses: docker/login-action@v2
+    - name: Login to GitHub Container Registry
+      uses: docker/login-action@v3
       with:
         registry: ghcr.io
         username: mdnoman21
-        password: ${{ secrets.GH_PAT}}
+        password: ${{ secrets.GH_PAT }}
 
     - name: Build Docker image
       run: docker build -t ghcr.io/mdnoman21/cdm:ec3ae3b .
