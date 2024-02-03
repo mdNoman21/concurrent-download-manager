@@ -25,7 +25,7 @@ func main() {
 			log.Print(err.Error())
 		}
 
-		fmt.Printf("Download completed in %v seconds\n", time.Since(startTime).Seconds())
+		fmt.Printf("Download finished in %v seconds\n", time.Since(startTime).Seconds())
 	}
 
 	if err := scanner.Err(); err != nil {
